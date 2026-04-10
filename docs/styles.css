@@ -161,7 +161,7 @@ h3 {
   background: rgba(255,255,255,0.04);
 }
 
-.hero-card, .card, .compare-box, .contact-box, .cta-box, .quick-strip {
+.hero-card, .card, .compare-box, .contact-box, .cta-box, .quick-strip, .faq-item, .sample-card, .onboard-step {
   background: rgba(255,255,255,0.03);
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -262,7 +262,7 @@ h3 {
   padding: 24px;
 }
 
-.card p, .compare-box li, .two-col p, .cta-box p, .faq-item p {
+.card p, .compare-box li, .two-col p, .cta-box p, .faq-item p, .onboard-step p {
   color: var(--muted);
 }
 
@@ -387,6 +387,57 @@ h3 {
   color: var(--text);
 }
 
+.sample-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sample-card {
+  overflow: hidden;
+}
+
+.sample-head {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  color: #ddd6fe;
+  background: rgba(139,92,246,0.12);
+  font-weight: 600;
+}
+
+.sample-card pre {
+  margin: 0;
+  padding: 18px;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #dbeafe;
+}
+
+.onboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.onboard-step {
+  padding: 24px;
+}
+
+.onboard-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: #ddd6fe;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -395,9 +446,6 @@ h3 {
 
 .faq-item {
   padding: 24px;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
 }
 
 .faq-item h3 {
@@ -453,7 +501,8 @@ h3 {
 }
 
 @media (max-width: 1040px) {
-  .card-grid.four {
+  .card-grid.four,
+  .onboard-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -477,7 +526,9 @@ h3 {
   .card-grid.three,
   .card-grid.four,
   .metric-row,
-  .faq-grid {
+  .faq-grid,
+  .sample-grid,
+  .onboard-grid {
     grid-template-columns: 1fr;
   }
 
