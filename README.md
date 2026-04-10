@@ -240,6 +240,13 @@
 
 ---
 
+## 联系方式 / 合作联系
+
+- 连续邮箱：2254473740@qq.com
+- 中国地区联系电话：15083618579
+
+---
+
 ## 相关仓库
 
 - 主仓库：https://github.com/yu5-520/Solution-Design-Engineering
