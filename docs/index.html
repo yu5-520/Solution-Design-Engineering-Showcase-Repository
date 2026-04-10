@@ -12,7 +12,8 @@
     <div class="container nav">
       <div class="brand">Solution Design Engineering</div>
       <nav>
-        <a href="#value">核心价值</a>
+        <a href="#product">产品模块</a>
+        <a href="#flow">运行链路</a>
         <a href="#trial">试运行</a>
         <a href="#cooperation">合作方式</a>
         <a href="#contact">联系</a>
@@ -23,31 +24,62 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <p class="eyebrow">Showcase Trial v1</p>
-          <h1>让方案设计，不再靠人硬顶</h1>
+          <h1>让方案设计，从个人硬顶，变成组织基础设施</h1>
           <p class="hero-text">
             一个基于 GitHub + AI + 人工节点协同运行的方案设计工程化系统。
-            目标不是让方案看起来更复杂，而是让方案能力变成可复用、可迭代、可沉淀的组织资产。
+            它不是把方案写得更花，而是把方案能力做成可复用、可迭代、可沉淀、可接入的系统能力。
           </p>
           <div class="tags">
             <span>降本增效</span>
             <span>持续迭代</span>
             <span>固定底色与方向</span>
+            <span>可测试试运行</span>
           </div>
           <div class="actions">
             <a class="btn btn-primary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository" target="_blank" rel="noreferrer">查看展示仓</a>
-            <a class="btn btn-secondary" href="https://github.com/yu5-520/Solution-Design-Engineering" target="_blank" rel="noreferrer">查看母仓</a>
+            <a class="btn btn-secondary" href="#trial">先看试运行方式</a>
+          </div>
+          <div class="hero-note">
+            适合创业者、顾问团队、产品团队、运营团队，以及希望把方案能力沉淀为组织资产的企业。
           </div>
         </div>
-        <div class="hero-card">
-          <div class="status">当前状态</div>
-          <h2>已公开发布，可展示、可测试、可试运行</h2>
-          <ul>
-            <li>展示仓承载展示、试运行、测试与接入沟通</li>
-            <li>母仓承载 Python 智能核心与后续演进能力</li>
-            <li>客户可先验证流程是否跑通，不等于默认开放母仓核心</li>
-          </ul>
+
+        <div class="hero-panel">
+          <div class="hero-card featured">
+            <div class="status">当前状态</div>
+            <h2>已公开发布，可展示、可测试、可试运行</h2>
+            <ul>
+              <li>展示仓承载展示、试运行、测试与接入沟通</li>
+              <li>母仓承载 Python 智能核心与后续演进能力</li>
+              <li>客户可先验证流程是否跑通，不等于默认开放母仓核心</li>
+            </ul>
+          </div>
+          <div class="metric-row">
+            <div class="metric-card">
+              <strong>试运行定位</strong>
+              <span>验证流程是否跑通</span>
+            </div>
+            <div class="metric-card">
+              <strong>母仓保护</strong>
+              <span>核心智能保留在母仓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container quick-strip">
+        <div>
+          <p class="section-label">一句话定位</p>
+          <h2>这不是普通方案库，也不是普通 AI 写方案工具</h2>
+          <p>它的目标，是把方案设计从“靠个人经验硬顶”，升级成“可运行、可继承、可升级的组织能力”。</p>
+        </div>
+        <div class="mini-cta">
+          <a class="btn btn-primary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository/issues/new?template=input-request.yml" target="_blank" rel="noreferrer">提交测试需求</a>
+          <a class="btn btn-secondary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository/actions/workflows/runbook-guard-v2.yml" target="_blank" rel="noreferrer">运行试运行工作流</a>
         </div>
       </div>
     </section>
@@ -68,6 +100,35 @@
           <article class="card">
             <h3>固定底色与方向</h3>
             <p>先固定原则、边界、主轴，再开放细节创新，让多人协作也不容易跑偏。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section">
+      <div class="container">
+        <p class="section-label">产品模块</p>
+        <h2>这不是一个点工具，而是一条完整的方案设计主链</h2>
+        <div class="card-grid four">
+          <article class="card module-card">
+            <span class="module-no">01</span>
+            <h3>输入整理</h3>
+            <p>把混乱需求先转成可判断、可检查、可补全的结构化输入。</p>
+          </article>
+          <article class="card module-card">
+            <span class="module-no">02</span>
+            <h3>检查放行</h3>
+            <p>在进入框架层之前，先暴露缺项、冲突、风险与责任错位。</p>
+          </article>
+          <article class="card module-card">
+            <span class="module-no">03</span>
+            <h3>框架拆解</h3>
+            <p>按母维度完成拆解，形成主线、权责接口、风险节点与时间安排。</p>
+          </article>
+          <article class="card module-card">
+            <span class="module-no">04</span>
+            <h3>正式输出</h3>
+            <p>把框架转成方案草案，再结合评审、案例和提示词持续回流沉淀。</p>
           </article>
         </div>
       </div>
@@ -98,6 +159,27 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="flow" class="section flow-section">
+      <div class="container">
+        <p class="section-label">运行链路</p>
+        <h2>一条可运行、可回退、可沉淀的主链路</h2>
+        <div class="flow-board">
+          <div class="flow-node">inputs</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">checks</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">frameworks</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">outputs</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">reviews</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">cases</div>
+        </div>
+        <div class="flow-caption">中间保留人工关口、条件补充、案例归类与回流沉淀，不把所有判断都交给自动化一步直跑。</div>
       </div>
     </section>
 
@@ -170,6 +252,20 @@
           <span>顾问交付型方案设计</span>
           <span>企业内部流程梳理</span>
           <span>工作流搭建与展示</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-box">
+        <div>
+          <p class="section-label">下一步</p>
+          <h2>先试运行，再决定是否进入更深合作</h2>
+          <p>展示仓已经足够让客户理解产品方向、测试结构路径、验证工作流是否跑通。更深的智能能力与自动化承载，继续保留在母仓。</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository/issues/new?template=input-request.yml" target="_blank" rel="noreferrer">提交测试需求</a>
+          <a class="btn btn-secondary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository/actions/workflows/runbook-guard-v2.yml" target="_blank" rel="noreferrer">进入试运行工作流</a>
         </div>
       </div>
     </section>
