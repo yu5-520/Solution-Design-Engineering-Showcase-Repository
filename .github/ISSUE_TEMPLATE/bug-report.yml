@@ -1,0 +1,165 @@
+name: Workflow Bug Report
+description: 用结构化方式提交工作流问题，便于归因、回退和修正
+title: "[BUG] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Workflow Bug Report
+
+        这个表单用于报告仓库工作流中的问题。
+
+        目标不是只说“哪里坏了”，而是把问题落到具体层级：
+        - `inputs/`
+        - `checks/`
+        - `frameworks/`
+        - `outputs/`
+        - `reviews/`
+        - `runbook.md`
+
+        这样问题才能被定位、回退并修正，而不是反复重写却找不到源头。
+
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: 问题描述
+      description: 这次具体出现了什么问题，请尽量描述现象而不是直接下结论。
+      placeholder: 例：输出结构完整，但权责接口模糊，导致后续执行无法分工。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_stage
+    attributes:
+      label: 问题主要暴露在哪一层
+      description: 选择问题最先被看到的位置。
+      options:
+        - inputs/
+        - checks/
+        - frameworks/
+        - outputs/
+        - reviews/
+        - cases/
+        - prompts/
+        - runbook.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: likely_cause
+    attributes:
+      label: 你认为最可能的问题归因
+      description: 对齐 reviews/rollback-rules.md 的归因逻辑。
+      options:
+        - 输入模板问题
+        - 校验节点问题
+        - 拆解维度问题
+        - 框架模板问题
+        - 输出格式问题
+        - 审核机制问题
+        - 暂不确定
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed_behavior
+    attributes:
+      label: 实际表现
+      description: 问题在实际使用中是如何表现出来的。
+      placeholder: 例：高风险项未被拦截；信息冲突被直接带入框架层；输出可读但不可执行。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期望表现
+      description: 按当前仓库设计，这里原本应该如何运行。
+      placeholder: 例：checks/ 应该先拦截冲突信息，再进入 frameworks/。
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_files
+    attributes:
+      label: 涉及文件 / 模块
+      description: 写出你认为相关的文件、目录、模板或工作流。
+      placeholder: 例：checks/checklist.md、frameworks/structure-template.md、runbook.md
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: 复现路径
+      description: 尽量写清楚问题是如何一步步出现的。
+      placeholder: |
+        1. 用某类需求进入 inputs/
+        2. 进入 checks/
+        3. 未人工补充直接进入 frameworks/
+        4. 在 outputs/ 暴露执行问题
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact_scope
+    attributes:
+      label: 影响范围
+      description: 这个问题会影响哪一层、哪类需求或哪段主链路。
+      placeholder: 例：会影响所有需要多方权责划分的方案；会让 outputs/ 的可执行性下降。
+    validations:
+      required: false
+
+  - type: dropdown
+    id: rollback_target
+    attributes:
+      label: 建议回退到哪一层修正
+      description: 如果你已经有判断，可直接给出建议回退层级。
+      options:
+        - inputs/
+        - checks/
+        - frameworks/
+        - outputs/
+        - reviews/
+        - runbook.md
+        - 暂不确定
+    validations:
+      required: true
+
+  - type: textarea
+    id: rollback_reason
+    attributes:
+      label: 回退原因
+      description: 为什么你认为应该回退到这一层，而不是直接重写结果。
+      placeholder: 例：问题不是输出文风，而是前面没有拦截责任空白，所以应回退到 checks/。
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: boundary_check
+    attributes:
+      label: 边界确认
+      description: 确认这个反馈仍遵循仓库的人机分工边界。
+      options:
+        - label: 我确认这不是要求 AI 跳过人工节点直接拍板
+          required: true
+        - label: 我确认这个问题反馈是为了定位和修正结构，不只是重写结果
+          required: true
+        - label: 我确认必要时应保留或补回人工判断节点
+          required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 补充材料
+      description: 可以附上案例链接、PR、Issue、工作流日志或其它上下文。
+      placeholder: 粘贴相关链接、日志、案例摘要等。
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        提交后，这条问题应优先被视为 `reviews/` 输入材料，并结合 `rollback-rules.md` 判断回退层级。 
