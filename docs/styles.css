@@ -225,6 +225,10 @@ h3 {
   background: rgba(255,255,255,0.02);
 }
 
+.alt-soft {
+  background: rgba(255,255,255,0.015);
+}
+
 .quick-strip {
   padding: 28px;
   display: grid;
@@ -355,6 +359,32 @@ h3 {
   background: var(--accent-soft);
   color: #ddd6fe;
   font-weight: 700;
+}
+
+.examples-note {
+  color: var(--muted);
+  max-width: 860px;
+  margin-bottom: 22px;
+}
+
+.example-card {
+  position: relative;
+}
+
+.example-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #ddd6fe;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.example-card p strong {
+  color: var(--text);
 }
 
 .cta-section {
