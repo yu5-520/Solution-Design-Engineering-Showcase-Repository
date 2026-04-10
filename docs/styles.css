@@ -262,7 +262,7 @@ h3 {
   padding: 24px;
 }
 
-.card p, .compare-box li, .two-col p, .cta-box p {
+.card p, .compare-box li, .two-col p, .cta-box p, .faq-item p {
   color: var(--muted);
 }
 
@@ -387,6 +387,23 @@ h3 {
   color: var(--text);
 }
 
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.faq-item {
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+}
+
+.faq-item h3 {
+  margin-bottom: 12px;
+}
+
 .cta-section {
   padding-top: 56px;
   padding-bottom: 56px;
@@ -459,7 +476,8 @@ h3 {
   .quick-strip,
   .card-grid.three,
   .card-grid.four,
-  .metric-row {
+  .metric-row,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
