@@ -1,0 +1,36 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B1120"/>
+  <rect x="36" y="36" width="1128" height="558" rx="32" fill="url(#paint0_linear)" fill-opacity="0.12" stroke="url(#paint1_linear)"/>
+  <circle cx="980" cy="108" r="220" fill="#8B5CF6" fill-opacity="0.10"/>
+  <circle cx="1080" cy="560" r="240" fill="#22D3EE" fill-opacity="0.08"/>
+  <rect x="86" y="86" width="120" height="120" rx="28" fill="#0F172A" stroke="url(#paint2_linear)"/>
+  <path d="M122 118H159C172.807 118 184 129.193 184 143C184 156.807 172.807 168 159 168H122V118Z" fill="#8B5CF6" fill-opacity="0.22"/>
+  <path d="M116 120H154C163.389 120 171 127.611 171 137C171 146.389 163.389 154 154 154H131V168H116V120Z" fill="#8B5CF6"/>
+  <path d="M131 132H153C155.761 132 158 134.239 158 137C158 139.761 155.761 142 153 142H131V132Z" fill="#EDE9FE"/>
+  <text x="240" y="150" fill="#C4B5FD" font-family="Segoe UI, Arial, sans-serif" font-size="26" letter-spacing="5">SHOWCASE TRIAL V1</text>
+  <text x="86" y="280" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="700">方案设计工程化</text>
+  <text x="86" y="360" fill="#E5E7EB" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">让方案设计，从个人硬顶，变成组织基础设施</text>
+  <text x="86" y="438" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="28">GitHub + AI + 人工节点协同运行的方案设计工程化系统</text>
+  <g>
+    <rect x="86" y="492" width="170" height="48" rx="24" fill="#8B5CF6" fill-opacity="0.16" stroke="#A78BFA"/>
+    <text x="126" y="523" fill="#DDD6FE" font-family="Segoe UI, Arial, sans-serif" font-size="22">降本增效</text>
+    <rect x="274" y="492" width="170" height="48" rx="24" fill="#8B5CF6" fill-opacity="0.16" stroke="#A78BFA"/>
+    <text x="314" y="523" fill="#DDD6FE" font-family="Segoe UI, Arial, sans-serif" font-size="22">持续迭代</text>
+    <rect x="462" y="492" width="250" height="48" rx="24" fill="#8B5CF6" fill-opacity="0.16" stroke="#A78BFA"/>
+    <text x="502" y="523" fill="#DDD6FE" font-family="Segoe UI, Arial, sans-serif" font-size="22">固定底色与方向</text>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear" x1="36" y1="36" x2="1164" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="36" y1="36" x2="1164" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#67E8F9"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="86" y1="86" x2="206" y2="206" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset="1" stop-color="#67E8F9"/>
+    </linearGradient>
+  </defs>
+</svg>
