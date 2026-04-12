@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>方案设计工程化｜Showcase Trial v1</title>
-  <meta name="description" content="方案设计工程化展示站。用于展示、试运行、测试与合作沟通。">
+  <meta name="description" content="轻量化方案设计工作流展示站。用于展示、试运行、测试与合作沟通。">
   <meta name="theme-color" content="#0f172a">
   <meta property="og:type" content="website">
   <meta property="og:title" content="方案设计工程化｜Showcase Trial v1">
-  <meta property="og:description" content="让方案设计，从个人硬顶，变成组织基础设施。基于 GitHub + AI + 人工节点协同运行的方案设计工程化系统。">
+  <meta property="og:description" content="让方案设计，从个人硬顶，变成轻量可接入的组织基础设施。尽量依托 GitHub 内置 Actions 压低环境与部署摩擦。">
   <meta property="og:image" content="https://yu5-520.github.io/Solution-Design-Engineering-Showcase-Repository/assets/og-cover.svg">
   <meta property="og:url" content="https://yu5-520.github.io/Solution-Design-Engineering-Showcase-Repository/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="方案设计工程化｜Showcase Trial v1">
-  <meta name="twitter:description" content="让方案设计，从个人硬顶，变成组织基础设施。">
+  <meta name="twitter:description" content="让方案设计，从个人硬顶，变成轻量可接入的组织基础设施。">
   <meta name="twitter:image" content="https://yu5-520.github.io/Solution-Design-Engineering-Showcase-Repository/assets/og-cover.svg">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="apple-touch-icon" href="./assets/favicon.svg">
@@ -31,6 +31,7 @@
       </a>
       <nav>
         <a href="#product">产品模块</a>
+        <a href="#lightweight">轻量化</a>
         <a href="#flow">运行链路</a>
         <a href="#trial">试运行</a>
         <a href="#examples">测试示例</a>
@@ -52,19 +53,21 @@
           <p class="hero-text">
             一个基于 GitHub + AI + 人工节点协同运行的方案设计工程化系统。
             它不是把方案写得更花，而是把方案能力做成可复用、可迭代、可沉淀、可接入的系统能力。
+            同时尽量依托 GitHub 内置 Actions 先跑通主链，压低本地环境依赖与部署摩擦，让工作流可以更轻地进入真实业务场景。
           </p>
           <div class="tags">
             <span>降本增效</span>
+            <span>轻环境</span>
+            <span>轻部署</span>
+            <span>轻场景</span>
             <span>持续迭代</span>
-            <span>固定底色与方向</span>
-            <span>可测试试运行</span>
           </div>
           <div class="actions">
             <a class="btn btn-primary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository" target="_blank" rel="noreferrer">查看展示仓</a>
             <a class="btn btn-secondary" href="#trial">先看试运行方式</a>
           </div>
           <div class="hero-note">
-            适合创业者、顾问团队、产品团队、运营团队，以及希望把方案能力沉淀为组织资产的企业。
+            适合创业者、顾问团队、产品团队、运营团队，以及希望先轻量试点、再把方案能力沉淀为组织资产的企业。
           </div>
         </div>
 
@@ -75,7 +78,7 @@
             <ul>
               <li>展示仓承载展示、试运行、测试与接入沟通</li>
               <li>母仓承载 Python 智能核心与后续演进能力</li>
-              <li>客户可先验证流程是否跑通，不等于默认开放母仓核心</li>
+              <li>尽量利用 GitHub 内置 Actions 先跑通主链，降低试运行门槛</li>
             </ul>
           </div>
           <div class="metric-row">
@@ -84,8 +87,8 @@
               <span>验证流程是否跑通</span>
             </div>
             <div class="metric-card">
-              <strong>母仓保护</strong>
-              <span>核心智能保留在母仓</span>
+              <strong>轻量化承载</strong>
+              <span>压低环境与部署摩擦</span>
             </div>
           </div>
         </div>
@@ -97,12 +100,34 @@
         <div>
           <p class="section-label">一句话定位</p>
           <h2>这不是普通方案库，也不是普通 AI 写方案工具</h2>
-          <p>它的目标，是把方案设计从“靠个人经验硬顶”，升级成“可运行、可继承、可升级的组织能力”。</p>
+          <p>它的目标，是把方案设计从“靠个人经验硬顶”，升级成“可运行、可继承、可升级的组织能力”，并以更轻的方式先进入真实业务场景。</p>
         </div>
         <div class="mini-cta">
           <a class="btn btn-primary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository/issues/new?template=input-request.yml" target="_blank" rel="noreferrer">提交测试需求</a>
           <a class="btn btn-secondary" href="https://github.com/yu5-520/Solution-Design-Engineering-Showcase-Repository/actions/workflows/runbook-guard-v2.yml" target="_blank" rel="noreferrer">运行试运行工作流</a>
         </div>
+      </div>
+    </section>
+
+    <section id="lightweight" class="section alt-soft">
+      <div class="container">
+        <p class="section-label">轻量化优势</p>
+        <h2>不是先折腾重环境，再考虑能不能开始</h2>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>轻环境</h3>
+            <p>尽量利用 GitHub 内置 Actions 承载工作流，压低本地环境依赖和环境配置摩擦。</p>
+          </article>
+          <article class="card">
+            <h3>轻部署</h3>
+            <p>更适合先做最小试运行、最小试点、最小场景验证，让企业先看流程能不能跑通，再决定是否放大接入。</p>
+          </article>
+          <article class="card">
+            <h3>轻场景</h3>
+            <p>不把流程绑死在固定工位与重设备上，让需求接收、结构判断、内容修改、版本衔接更贴近真实工作节奏。</p>
+          </article>
+        </div>
+        <div class="flow-caption">这套产品追求的不是把所有复杂工作塞进碎片时间里完成，而是把格式、排版、基础文案等重复处理交给流程承接，把人的空间还给真实数据、真实需求和真实判断。</div>
       </div>
     </section>
 
